@@ -1,0 +1,247 @@
+*{
+	transition: ease 0.5s;
+	transition-property: top, font-size, width, background-color;
+}
+body{
+	position: relative;
+}
+.header{
+	background-image: url(../pictures/background_pic.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	height: 100vh;
+}
+
+/** Navbar **/
+.navbar{
+	background-color: rgba(220,220,220,0.6);
+}
+.navbar .navbar-brand{
+	color: silver;
+	background-color: dimgray;
+	font-weight: 600;
+	float: left;
+	padding: 4px 8px;
+}
+.navbar .navbar-brand:hover{
+	box-shadow: 0 2px 3px darkslategray;
+}
+
+.navbar .jump-tag{
+	font-size: 18px;
+	font-weight: 640;
+	color: dimgray;
+	transition: ease 0.5s;
+}
+
+.navbar .jump-tag:hover{
+	background-color: dimgray;
+	color: gainsboro;
+	box-shadow: 0 2px 3px 0px darkslategray;
+}
+
+.active{
+	transition: initial;
+	/*
+	//color: gainsboro;
+	background-color: silver;
+	box-shadow: 0 2px 3px 0px darkslategray;
+	*/	
+	color: aliceblue;
+	background-color: silver;
+}
+
+.navbar i{
+	color: dimgray;
+	font-size: 20px;
+	transition: ease 0.5s;
+}
+.navbar i:hover{
+	color: black;
+	text-shadow: 0 3px 3px dimgray;
+}
+#nav-chevron{
+	color: dimgray;
+	font-size: 27px;
+}
+.quote{
+	margin-top: 60px;
+}
+.quote h5{
+	outline: solid dimgray;
+	outline-offset: -10px;
+	background-color: rgba(220,220,220,1);
+	padding: 20px;
+}
+.quote span{
+	margin: 20px;
+	float: right;
+}
+/** Welcome **/
+img{
+	width: 100%;
+	box-shadow: 0px 0px 15px dimgray;
+}
+#aae-logo{
+	width: 90px;
+	box-shadow: initial;
+}
+.hello-holder{
+	background-image: url(../pictures/background_pic.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+}
+.pic-holder{
+	background-color: silver;
+}
+.hello{
+	box-shadow: 0px 0px 25px dimgray;
+	transition: initial;
+	padding: 35px;
+	background-color: gainsboro;
+	position: relative;
+}
+
+.hello-box{
+	border: solid 2px dimgray;
+	padding: 0 30px 0px 30px
+}
+.hello-title{
+	position:relative;
+	bottom: 22px;
+	background-color: gainsboro;
+	width: 220px;
+}
+.hello-content{
+	position: relative;
+	bottom: 22px;
+	margin-bottom: -2px;
+}
+
+.about{
+	background-image: url(../pictures/cliff.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	height: auto;
+}
+.about-overlay{
+	background: rgba(128,142,157,0.93);
+	padding-top: 5%;
+	padding-bottom: 5%;
+	height: auto;
+}
+
+/** Content **/
+.offset{
+	padding-top: 65px;
+	margin-top: -65px;
+}
+
+.article{
+	background-image: url(../pictures/lunar_craters.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	padding-top: 65px;
+}
+.content-overlay{
+	background: rgba(50,50,50,0.8);
+	padding-bottom: 5%;
+}
+#content{
+	color: gainsboro;
+	position: relative;
+	height: auto;
+}
+#content h3{
+	background-color: gainsboro;
+	text-align: center;
+	padding: 2px 0px 3px 0px;
+	color: dimgray;
+	box-shadow: 0 0px 15px black;
+}
+#content h4{
+	width: 90%;
+	margin-left: 5%;
+	text-align: center;
+	background-color: dimgray;
+	padding: 1px 0px 4px 10px; 
+}
+#content h5{
+	margin-left: 5%;
+}
+#content ul{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+#content .gear{
+	border-top: solid;
+	//margin: 10% 0 -5% 0;
+	margin-top: 8%;
+}
+#content .gear i{
+	border-radius: 50%;
+	background-color: darkslategray;
+	position: relative;
+	bottom: 32.5px;
+}
+#content .hobby{
+	display:none;
+	margin-top: 5%;
+}
+
+/** Connection **/
+#connection{
+	background-color: gainsboro
+}
+#connection	h2{
+	margin-top: 6%;
+	margin-bottom: 3%;
+}
+#connection a{
+	font-size: 40px;
+	color:dimgray;
+	padding: 0 15px 0px 15px;
+}
+.social i{
+	width: 50px;
+	height: 50px;
+}
+.social{
+	margin-bottom: 5%;
+}
+.social .fa-linkedin:hover{
+	color: #0976b4;
+	font-size: 50px;
+}
+.social .fa-facebook-square:hover{
+	color: #3b5998;
+	font-size: 50px;
+}
+.social .fa-instagram:hover{
+	//transition: initial;
+	transition-property: font-size,background-color;
+	color: aliceblue;
+	font-size: 45px;
+	padding-top: 2.5px;
+	/*bg gradient*/
+	border-radius: 40%;
+	width:50px; height:50px;
+	background: #f09433; 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+
+}
