@@ -22,11 +22,7 @@ $(document).ready(function(){
 				navbar.css('background','rgba(220,220,220,0.6)');
 			}
 		}
-<<<<<<< HEAD
-	})
-=======
 	});
->>>>>>> 137fc918d7585175d6adc6baa49edf9b027513e7
 	//menu chevron botton
 	var colorChanged = false;
 	$('#nav-chevron').click(function(){
@@ -39,11 +35,8 @@ $(document).ready(function(){
 				colorChanged = false;
 			}
 		}
-<<<<<<< HEAD
-	})
-=======
+
 	});
->>>>>>> 137fc918d7585175d6adc6baa49edf9b027513e7
 	
 	//Layout Change On Resize
 	//offset hello
