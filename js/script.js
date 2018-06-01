@@ -23,6 +23,20 @@ $(document).ready(function(){
 			}
 		}
 	})
+	//menu chevron botton
+	var colorChanged = false;
+	$('#nav-chevron').click(function(){
+		if(view.scrollTop()===0 && colorChanged === false){
+			navbar.css('background','gainsboro');
+			colorChanged = true;
+		}else{
+			if(view.scrollTop()===0 && colorChanged === true){
+				navbar.css('background','rgba(220,220,220,0.6)');
+				colorChanged = false;
+			}
+		}
+	})
+	
 	//Layout Change On Resize
 	//offset hello
 	if(view.innerWidth()>550){
@@ -96,4 +110,3 @@ $(document).ready(function(){
 		$(this).removeClass('fa-envelope-open');
 	});
 })
-
