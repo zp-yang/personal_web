@@ -22,7 +22,21 @@ $(document).ready(function(){
 				navbar.css('background','rgba(220,220,220,0.6)');
 			}
 		}
-	})
+	});
+	//menu chevron botton
+	var colorChanged = false;
+	$('#nav-chevron').click(function(){
+		if(view.scrollTop()===0 && colorChanged === false){
+			navbar.css('background','gainsboro');
+			colorChanged = true;
+		}else{
+			if(view.scrollTop()===0 && colorChanged === true){
+				navbar.css('background','rgba(220,220,220,0.6)');
+				colorChanged = false;
+			}
+		}
+	});
+	
 	//Layout Change On Resize
 	//offset hello
 	if(view.innerWidth()>550){
@@ -31,7 +45,7 @@ $(document).ready(function(){
 	}else{
 		header.css('height',view.height()-helloTitleHeight-22+'px');
 		hello.css('top','0');
-		$('.mobile-view').removeClass('container')		
+		$('.mobile-view').removeClass('container');		
 	}
 	view.resize(function(){
 		var bgState = false;
