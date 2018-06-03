@@ -35,7 +35,6 @@ $(document).ready(function(){
 				colorChanged = false;
 			}
 		}
-
 	});
 	
 	//Layout Change On Resize
